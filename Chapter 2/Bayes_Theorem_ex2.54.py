@@ -1,8 +1,29 @@
-""" General Bayes Theorem"""
+""" General Bayes Theorem
+
+Working on the example 2.54 of the page 98 in the bookself.
+
+We will work following these annotations following the Bayes Theorem example  :
+
+* Basics
+************
+C = P(C)  : Probability of Having Cancer
+notC = P(7C)  : Probability of not Having Cancer
+M = P(M+) : Probability that the Mammogram is positive
+notM = P(notM+) : Probability that the Mammogram is negative
+
+* And ...
+M_C = P(M+|C) : Probability the Mammogram is positive knowing that the patient has Cancer
+M_notC = P(M+|7C) : Probability the Mammogram is positive knowing that the patient does not have Cancer
 
 
-"""Bayes Theorem with 2 """
+*
 
+"""
+
+
+"""Bayes Theorem """
+
+""" Tree Diagram Data """
 #Cancer probability
 C = 0.0035
 notC = 1 - C
@@ -16,7 +37,7 @@ M_notC = 0.07
 notM_notC = 0.93
 
 
-
+""" To answer this problem we need to find : P(C|M)"""
 # Finding P(C and M+)
 C_and_M = M_C * C
 print("P(C and M+) : ",C_and_M)
