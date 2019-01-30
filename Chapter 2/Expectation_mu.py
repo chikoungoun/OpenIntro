@@ -4,9 +4,6 @@ Code for computing the mean.
 Using a list of tuples.
 
 """
-
-
-
 def mean(l):
     s=0
     for i in t:
