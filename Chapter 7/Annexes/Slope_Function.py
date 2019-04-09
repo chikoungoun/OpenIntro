@@ -8,11 +8,10 @@ import math
 """
 
 #Compute the Slope
-A = 0
-B = 0
-for i,j in zip(d['A'].values,d['B'].values):
-    A = A + (i - d['A'].mean())*(j - d['B'].mean() )
-    B = B + ((i - d['A'].mean())**2)
-
-
-print(A/B)
+def slope():
+    A = 0
+    B = 0
+    for i,j in zip(d['A'].values,d['B'].values):
+        A = A + (i - d['A'].mean())*(j - d['B'].mean() )
+        B = B + ((i - d['A'].mean())**2)
+    return (A/B)
